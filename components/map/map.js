@@ -7,9 +7,13 @@ import { polyline } from '../../data/polylines'
 import { useState, useEffect } from 'react'
 import L from 'leaflet'
 
-export default function Map(){
+export default function Map({
+  handleClick = () => {}
+}){
 
   const coords = [49.28594, -123.11129]
+
+  const colorBlue = {color: '#005ba5'}
 
   var Icon = L.Icon.extend({
     options: {
@@ -18,15 +22,13 @@ export default function Map(){
   })
   
   var newIcon = new Icon({
-    iconUrl: '/dot.svg'
+    iconUrl: '/train.png'
   })
 
   const [stops, setStops] = useState([]) 
 
   useEffect(() => {
-    setTimeout(() => {
-      setStops(polyline)
-    }, 2000)
+    setStops(polyline)
   }, [])
  
   return ( 
@@ -52,14 +54,14 @@ export default function Map(){
             icon={newIcon}
             key={i}
             eventHandlers={{
-              click: (e) => {
-                console.log(i, e)
-              }
+              click: handleClick
             }}
           >
             <Popup >
                 Skytrain. <br/> Waterfront. <br/> {i}
             </Popup>
+
+
           </Marker>
 
           )
@@ -67,6 +69,7 @@ export default function Map(){
         
       }
 
+    <Polyline pathOptions={colorBlue} positions={polyline}/>
     </MapContainer>
   )
 }

@@ -22,7 +22,11 @@ export default function Home() {
       <Nav />
 
       <main className={styles.main}>
-        <Map />
+        <Map 
+          handleClick={(e) => {
+            console.log(e.containerPoint)
+          }}
+        />
       </main>
     </>
   )
