@@ -8,7 +8,7 @@ export default function Nav() {
       <div className={style.nav}>
         <img 
           className={style.nav}
-          src="/Translink_Logo.svg"
+          src="/translink-logo.png"
         />
       </div>
     </>
