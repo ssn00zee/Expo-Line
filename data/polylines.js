@@ -1,4 +1,4 @@
-export const polyline = [
+export const lines = [
   [49.28594, -123.11129],
   [49.285581150633966, -123.12012245876285],
   [49.28276795358473, -123.1164699145821],
@@ -19,4 +19,113 @@ export const polyline = [
   [49.1991136014707, -122.85066387225632],
   [49.18971392944762, -122.84792071458409],
   [49.1829310367517, -122.84473292807587]
+]
+
+export const extended = [
+  [49.204943945073374, -122.90607708574763],
+  [49.224860238697396, -122.88949270294468],
+  [49.23268213068468, -122.88456287225554],
+  [49.24875892482227, -122.89717730665],
+  [49.25367827613695, -122.91868207173422]
+]
+
+
+export const polyline = [
+  {
+    name: 'Waterfront',
+    location: [49.28594, -123.11129]
+  },
+  {
+    name: 'Burrard Station',
+    location: [49.285581150633966, -123.12012245876285]
+  },
+  {
+    name: 'Granville Station',
+    location: [49.28276795358473, -123.1164699145821]
+  },
+  {
+    name: 'Stadium-Chinatown Station',
+    location: [49.28010484687972, -123.11012142014103]
+  },
+  {
+    name: 'Main Street-Science World Station',
+    location: [49.273374980784865, -123.10037145876296]
+  },
+  {
+    name: 'Commercial-Broadway Station',
+    location: [49.262721001091556, -123.06927941643552]
+  },
+  {
+    name: 'Nanaimo Station',
+    location: [49.24844626535717, -123.05598167410812]
+  },
+  {
+    name: '29th Avenue Station',
+    location: [49.24436337925635, -123.04537402992739]
+  },
+  {
+    name: 'Joyce-Collingwood Station',
+    location: [49.24436337925635, -123.04537402992739]
+  },
+  {
+    name: 'Patterson Station',
+    location: [49.22991271599505, -123.01265107225555]
+  },
+  {
+    name: 'Metrotown Station',
+    location: [49.22593989446889, -123.00385127225569]
+  },
+  {
+    name: 'Royal Oak Station',
+    location: [49.220193228996386, -122.98845204229738]
+  },
+  {
+    name: 'Edmonds Station',
+    location: [49.21254265709066, -122.95914504342]
+  },
+  {
+    name: '22nd Street Station',
+    location: [49.200068725477024, -122.94922489130668]
+  },
+  {
+    name: 'New Westminster Station',
+    location: [49.20159918383558, -122.91263972992837]
+  },
+  {
+    name: 'Columbia Station',
+    location: [49.204943945073374, -122.90607708574763]
+  },
+  {
+    name: 'Scott Road Station',
+    location: [49.204575904842045, -122.87402738018886]
+  },
+  {
+    name: 'Gateway Station',
+    location: [49.1991136014707, -122.85066387225632]
+  },
+  {
+    name: 'Surrey Central Station',
+    location: [49.18971392944762, -122.84792071458409]
+  },
+  {
+    name: 'King George Station',
+    location: [49.1829310367517, -122.84473292807587]
+  },
+  {
+    name: 'Sapperton Station',
+    location: [49.224860238697396, -122.88949270294468]
+  },
+  {
+    name: 'Braid Station',
+    location: [49.23268213068468, -122.88456287225554]
+  },
+  {
+    name: 'Lougheed Town Centre Station',
+    location: [49.24875892482227, -122.89717730665]
+  },
+  {
+    name: 'Production Way - University Station',
+    location: [49.25367827613695, -122.91868207173422]
+  }
+
 ]

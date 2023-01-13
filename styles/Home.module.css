@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 .map {
   width: 80%;
   height: 50rem;
@@ -13,7 +15,7 @@
   display: flex;
   justify-content: flex-start;
   height: 4rem;
-  margin-bottom: 10em;
+  margin-bottom: 4em;
   background-color: #ffffff;
 }
 
@@ -27,4 +29,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer{
+  min-height: 4rem;
+  margin-top: 4em;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.img {
+  height: 2em;
+  margin-bottom: 0.5em;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #2E2E2E;
 }
